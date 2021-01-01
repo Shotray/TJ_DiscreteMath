@@ -24,7 +24,7 @@ int get_matrix(std::vector<std::vector<int>>& a,int n)
 
 
 //输出矩阵
-int output_matrix(std::vector<std::vector<int>> a)
+void output_matrix(std::vector<std::vector<int>> a)
 {
     int i = 0,j = 0;
     for (i = 0;i < a.size();i++) {
@@ -34,7 +34,7 @@ int output_matrix(std::vector<std::vector<int>> a)
         std::cout<<std::endl;
     }
 }
-int warshall(std::vector<std::vector<int>>& a)
+void warshall(std::vector<std::vector<int>>& a)
 {    
 //(1)i＝1；
 //(2)对所有j如果a[j，i]＝1，则对k＝0，1，…，n-1，a[j，k]＝a[j，k]∨a[i，k]；
